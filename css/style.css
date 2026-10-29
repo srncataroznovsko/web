@@ -89,3 +89,68 @@ body {
   transform: scale(1.06);
 }
 
+/* =============================================
+   Fotogalerie – carousel
+   ============================================= */
+
+/* Pevná výška slideru, zachování poměru stran 3:2 */
+.gallery-slide-img {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+@media (max-width: 767.98px) {
+  .gallery-slide-img {
+    height: 260px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .gallery-slide-img {
+    height: 380px;
+  }
+}
+
+/* Indikátory (tečky) – zelená barva spolku */
+#galerieCarousel .carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#galerieCarousel .carousel-indicators .active {
+  background-color: var(--accent-color);
+  transform: scale(1.3);
+}
+
+/* Šipky navigace */
+#galerieCarousel .carousel-control-prev,
+#galerieCarousel .carousel-control-next {
+  width: 52px;
+  height: 52px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  opacity: 0.75;
+  transition: opacity 0.2s ease, background-color 0.2s ease;
+  margin: 0 0.75rem;
+}
+
+#galerieCarousel .carousel-control-prev:hover,
+#galerieCarousel .carousel-control-next:hover {
+  opacity: 1;
+  background-color: var(--primary-color);
+}
+
+#galerieCarousel .carousel-control-prev-icon,
+#galerieCarousel .carousel-control-next-icon {
+  width: 20px;
+  height: 20px;
+}
