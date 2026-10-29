@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <defs>
+    <!-- Mask pro oříznutí vnitřku do kruhu -->
+    <clipPath id="circleClip">
+      <circle cx="50" cy="50" r="45" />
+    </clipPath>
+
+    <!-- Přechod pro pozadí kruhu (světlé nebe / příroda) -->
+    <linearGradient id="skyBg" x1="50" y1="5" x2="50" y2="75" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ebf8ee" />
+      <stop offset="60%" stop-color="#ddf2e3" />
+      <stop offset="100%" stop-color="#cbe8d3" />
+    </linearGradient>
+
+    <!-- Přechod pro termovizní / ochranný paprsek -->
+    <linearGradient id="scanBeam" x1="50" y1="28" x2="50" y2="60" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#52b788" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#52b788" stop-opacity="0.0" />
+    </linearGradient>
+
+    <!-- Přechod pro tělo srnčete (teplá srst) -->
+    <linearGradient id="fawnCoat" x1="32" y1="45" x2="68" y2="75" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#df8b39" />
+      <stop offset="60%" stop-color="#c47225" />
+      <stop offset="100%" stop-color="#a45714" />
+    </linearGradient>
+
+    <!-- Přechod pro stébla louky -->
+    <linearGradient id="meadowGrad" x1="50" y1="65" x2="50" y2="95" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#38805a" />
+      <stop offset="100%" stop-color="#1b4332" />
+    </linearGradient>
+  </defs>
+
+  <!-- VNITŘEK KRUHU -->
+  <g clip-path="url(#circleClip)">
+    <!-- Světlé pozadí medailonu -->
+    <circle cx="50" cy="50" r="45" fill="url(#skyBg)" />
+
+    <!-- Ochranný kužel / paprsek termovize z dronu -->
+    <polygon points="48,27 52,27 76,64 24,64" fill="url(#scanBeam)" />
+    <!-- Vlnky / pulzy termovize -->
+    <path d="M 42 35 A 10 6 0 0 0 58 35" stroke="#52b788" stroke-width="1.4" stroke-dasharray="2.5,2" fill="none" opacity="0.8" />
+    <path d="M 36 41 A 18 10 0 0 0 64 41" stroke="#52b788" stroke-width="1.4" stroke-dasharray="3,2.5" fill="none" opacity="0.6" />
+
+    <!-- DRON NAHOŘE -->
+    <!-- Ramena dronu -->
+    <line x1="45" y1="21" x2="31" y2="15" stroke="#1b4332" stroke-width="2.8" stroke-linecap="round" />
+    <line x1="55" y1="21" x2="69" y2="15" stroke="#1b4332" stroke-width="2.8" stroke-linecap="round" />
+    <line x1="45" y1="24" x2="33" y2="30" stroke="#1b4332" stroke-width="2.8" stroke-linecap="round" />
+    <line x1="55" y1="24" x2="67" y2="30" stroke="#1b4332" stroke-width="2.8" stroke-linecap="round" />
+
+    <!-- Rotory (točící se vrtule) -->
+    <ellipse cx="31" cy="15" rx="7.5" ry="2.2" fill="#52b788" opacity="0.85" />
+    <ellipse cx="69" cy="15" rx="7.5" ry="2.2" fill="#52b788" opacity="0.85" />
+    <ellipse cx="33" cy="30" rx="6.5" ry="2" fill="#52b788" opacity="0.85" />
+    <ellipse cx="67" cy="30" rx="6.5" ry="2" fill="#52b788" opacity="0.85" />
+
+    <!-- Středy motorů -->
+    <circle cx="31" cy="15" r="1.8" fill="#1b4332" />
+    <circle cx="69" cy="15" r="1.8" fill="#1b4332" />
+    <circle cx="33" cy="30" r="1.8" fill="#1b4332" />
+    <circle cx="67" cy="30" r="1.8" fill="#1b4332" />
+
+    <!-- Centrální tělo dronu -->
+    <rect x="44.5" y="19" width="11" height="7" rx="3.5" fill="#1b4332" />
+    <!-- Termokamera / senzor na podvozku -->
+    <circle cx="50" cy="26" r="2.2" fill="#52b788" />
+    <circle cx="50" cy="26" r="1" fill="#ffffff" />
+
+    <!-- ZADNÍ KOPCE / LOUKA -->
+    <path d="M 5 74 Q 50 63 95 74 L 95 95 L 5 95 Z" fill="#40916c" opacity="0.4" />
+
+    <!-- SRNČE (odpočívající s přirozenou siluetou) -->
+    <!-- Tělo srnčete - ležící v trávě -->
+    <path d="M 31 75 C 27 73 24 68 25 62 C 26 55 33 53 43 54 C 47 54 53 56 57 60 C 63 65 65 72 61 77 C 55 80 37 80 31 75 Z" fill="url(#fawnCoat)" />
+
+    <!-- Světlejší hruď a bříško -->
+    <path d="M 47 57 C 51 60 55 64 56 70 C 51 72 45 72 41 68 C 42 62 44 59 47 57 Z" fill="#fce4cc" />
+
+    <!-- Složená přední nožka -->
+    <path d="M 40 76 C 45 76 52 75 55 72 C 55 70 52 68 49 69 C 45 71 42 73 40 76 Z" fill="#9c4d0a" />
+
+    <!-- Krk srnčete stoupající vzhůru -->
+    <path d="M 47 57 C 46 52 48 48 51 46 C 54 48 57 52 58 58 C 55 58 50 57 47 57 Z" fill="url(#fawnCoat)" />
+    <!-- Světlý proužek na hrdle -->
+    <path d="M 51 48 C 53 50 54 53 55 56 C 53 56 51 54 50 51 Z" fill="#fce4cc" />
+
+    <!-- Uši srnčete (vztyčené, ostražité a jemné) -->
+    <!-- Levé ucho -->
+    <path d="M 49 43 C 45 35 41 31 43 30 C 45.5 30 48.5 35 50 42 Z" fill="#a45714" />
+    <path d="M 48.5 41 C 46 35 43.5 32 44.5 31.5 C 45.5 31.5 47.5 35 49 40 Z" fill="#fbd3a2" />
+
+    <!-- Pravé ucho -->
+    <path d="M 54 42 C 57 34 61 31 63 32 C 63.5 34 59.5 38 56 43 Z" fill="#a45714" />
+    <path d="M 55 41 C 57.5 35 60 32.5 61.2 33 C 61.5 34 58.5 37.5 56 41 Z" fill="#fbd3a2" />
+
+    <!-- Hlava srnčete -->
+    <path d="M 48 45 C 48 41 51 39 55 39 C 58 39 60 41 61 44 C 62 47 60 50 56 51 C 52 51 48 48 48 45 Z" fill="url(#fawnCoat)" />
+    <!-- Čumák a tlama -->
+    <path d="M 58 43 C 62 43 65 44.5 65 46.5 C 65 48.5 62 49.5 58 49.5 Z" fill="#f3bf8d" />
+    <circle cx="64.5" cy="46" r="1.3" fill="#231709" />
+
+    <!-- Pokojné oko srnčete -->
+    <ellipse cx="54.5" cy="43.5" rx="1.6" ry="2" fill="#231709" />
+    <circle cx="54.2" cy="42.8" r="0.6" fill="#ffffff" />
+    <path d="M 52.5 42 Q 54.5 40.5 56.5 42" stroke="#683506" stroke-width="0.7" fill="none" />
+
+    <!-- Bílé tečky na hřbetě srnčete (charakteristický znak) -->
+    <g fill="#ffffff" opacity="0.95">
+      <circle cx="31" cy="62" r="1.2" />
+      <circle cx="35" cy="60" r="1.3" />
+      <circle cx="39" cy="59" r="1.3" />
+      <circle cx="43" cy="60" r="1.2" />
+      
+      <circle cx="30" cy="67" r="1.3" />
+      <circle cx="34" cy="65" r="1.4" />
+      <circle cx="39" cy="64" r="1.3" />
+      <circle cx="44" cy="65" r="1.2" />
+
+      <circle cx="35" cy="71" r="1.2" />
+      <circle cx="40" cy="70" r="1.3" />
+    </g>
+
+    <!-- POPŘEDÍ: LOUKA A TRÁVA -->
+    <path d="M 5 76 Q 50 68 95 76 L 95 95 L 5 95 Z" fill="url(#meadowGrad)" />
+
+    <!-- Stébla trávy v popředí kryjící srnče -->
+    <g fill="#2d6a4f">
+      <!-- Levá skupinka trávy -->
+      <path d="M 16 82 Q 13 72 10 66 Q 15 73 20 83 Z" />
+      <path d="M 22 84 Q 21 70 26 63 Q 26 73 28 85 Z" fill="#52b788" />
+      <path d="M 28 86 Q 30 73 35 68 Q 33 77 34 87 Z" />
+      
+      <!-- Střední krycí stébla -->
+      <path d="M 44 88 Q 45 76 42 71 Q 48 77 48 89 Z" fill="#52b788" />
+      <path d="M 58 89 Q 62 76 67 70 Q 64 80 63 90 Z" />
+
+      <!-- Pravá skupinka trávy -->
+      <path d="M 72 87 Q 75 74 81 68 Q 78 78 77 88 Z" fill="#52b788" />
+      <path d="M 83 85 Q 87 75 91 71 Q 88 80 87 88 Z" />
+    </g>
+
+    <!-- Drobný bílo-žlutý kvítek heřmánku v trávě -->
+    <circle cx="21" cy="71" r="1.5" fill="#fcd34d" />
+    <circle cx="21" cy="69" r="1" fill="#ffffff" />
+    <circle cx="23" cy="71" r="1" fill="#ffffff" />
+    <circle cx="21" cy="73" r="1" fill="#ffffff" />
+    <circle cx="19" cy="71" r="1" fill="#ffffff" />
+  </g>
+
+  <!-- VNĚJŠÍ KRUHOVÝ RÁMEČEK (ELEGANTNÍ ODZNAK / MEDAILON) -->
+  <circle cx="50" cy="50" r="47" stroke="#2d6a4f" stroke-width="3" fill="none" />
+  <circle cx="50" cy="50" r="44.5" stroke="#52b788" stroke-width="1" stroke-dasharray="2,2" fill="none" opacity="0.6" />
+</svg>

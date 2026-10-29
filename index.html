@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zachraň zvíře před sekačkou | Spolek pro ochranu volně žijící zvěře</title>
+  <meta name="description" content="Oficiální stránky spolku Zachraň zvíře před sekačkou. Pomáháme chránit volně žijící zvěř při senosečích pomocí moderních technologií a dronů.">
+  <link rel="icon" type="image/svg" href="img/logo.svg">
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <!-- Vlastní CSS (minimální doplňky) -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigace -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm py-3">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center fw-bold text-nature-primary" href="#uvod">
+        <img src="img/logo.svg" alt="Logo Zachraňme srnčata - Drony pro přírodu" height="52" class="me-2 flex-shrink-0">
+        <span>Zachraň zvíře před sekačkou</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Přepnout navigaci">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarMain">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item">
+            <a class="nav-link px-3" href="#o-spolku">O spolku</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3" href="#cinnost">Činnost</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3" href="#technika">Technika</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3" href="#spoluprace">Jak pomáháme</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3" href="#udaje">Údaje</a>
+          </li>
+          <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+            <a class="btn btn-nature-primary px-4 rounded-pill" href="#kontakt">Kontaktujte nás</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero sekce -->
+  <header id="uvod" class="hero-section">
+    <div class="container">
+      <div class="row align-items-center py-4">
+        <div class="col-lg-8 mx-auto text-center">
+          <!--<div class="badge bg-success-subtle text-success-emphasis border border-success px-3 py-2 rounded-pill mb-3">
+            <i class="bi bi-calendar-check me-1"></i> Zapsáno 23. října 2026
+          </div>-->
+          <h1 class="display-4 fw-bold mb-3">
+            Chráníme volně žijící zvěř před zemědělskou technikou
+          </h1>
+          <p class="lead mb-4 text-light opacity-90">
+            Spojujeme moderní technologie, drony s termovizí, zemědělce, myslivce a dobrovolníky. 
+            Naším cílem je vyhledat a ochránit srnčata a další zvířata na loukách ještě před vjezdem sekaček.
+          </p>
+          <div class="d-flex flex-wrap justify-content-center gap-3">
+            <a href="#spoluprace" class="btn btn-light btn-lg px-4 fw-semibold text-nature-primary rounded-pill">
+              <i class="bi bi-hand-thumbs-up me-2"></i>Chci se zapojit
+            </a>
+            <a href="#cinnost" class="btn btn-outline-light btn-lg px-4 rounded-pill">
+              <i class="bi bi-info-circle me-2"></i>Co děláme
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Účel spolku -->
+  <section id="o-spolku" class="py-5 bg-nature-light">
+    <div class="container py-4">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="card border-0 shadow-sm p-4 p-md-5 rounded-4">
+            <div class="text-center mb-4">
+              <span class="text-uppercase fw-semibold text-muted small letter-spacing">Poslání spolku</span>
+              <h2 class="fw-bold text-nature-primary mt-1">Účel našeho spolku</h2>
+            </div>
+            
+            <blockquote class="blockquote text-center fs-4 fw-normal text-secondary mb-4 fst-italic">
+              „Hlavním účelem spolku je ochrana přírody a krajiny, pomoc při ochraně volně žijící zvěře, zejména zvěře ohrožené zemědělskou činností.“
+            </blockquote>
+            
+            <div class="text-center text-muted small mb-4">
+              <i class="bi bi-journal-bookmark me-1"></i> Oficiální účel dle stanov • zapsáno 23. října 2026
+            </div>
+
+            <div class="row g-4 mt-2">
+              <div class="col-md-4 text-center">
+                <div class="p-3">
+                  <i class="bi bi-heart-pulse text-success fs-1 mb-2 d-block"></i>
+                  <h5 class="fw-bold">Záchrana životů</h5>
+                  <p class="text-muted small">Prevence zranění a usmrcení bezbranných mláďat ukrytých ve vysoké trávě.</p>
+                </div>
+              </div>
+              <div class="col-md-4 text-center border-start-md">
+                <div class="p-3">
+                  <i class="bi bi-broadcast-pin text-success fs-1 mb-2 d-block"></i>
+                  <h5 class="fw-bold">Technologie & Drony</h5>
+                  <p class="text-muted small">Rychlý a efektivní průzkum ploch termovizí v ranních hodinách před sečí.</p>
+                </div>
+              </div>
+              <div class="col-md-4 text-center border-start-md">
+                <div class="p-3">
+                  <i class="bi bi-people text-success fs-1 mb-2 d-block"></i>
+                  <h5 class="fw-bold">Partnerský dialog</h5>
+                  <p class="text-muted small">Spolupráce se zemědělci a myslivci postavená na důvěře a vzájemné pomoci.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Předmět činnosti -->
+  <section id="cinnost" class="py-5">
+    <div class="container py-4">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <span class="text-uppercase fw-semibold text-success small">Naše aktivity</span>
+        <h2 class="fw-bold text-nature-primary mt-1">Předmět činnosti spolku</h2>
+        <p class="text-muted">
+          Konkrétní kroky, kterými naplňujeme naše poslání v terénu i mimo něj.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        
+        <!-- Bod 1 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm p-4 feature-card">
+            <div class="icon-box">
+              <i class="bi bi-search"></i>
+            </div>
+            <h5 class="fw-bold mb-3">Vyhledávání a ochrana zvěře</h5>
+            <p class="text-muted mb-0">
+              Spolek pomáhá ve vyhledávání a ochraně volně žijící zvěře při sečení luk a dalších zemědělských ploch. Aktivně působíme přímo v terénu před sekačkami.
+            </p>
+          </div>
+        </div>
+
+        <!-- Bod 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm p-4 feature-card">
+            <div class="icon-box">
+              <i class="bi bi-people-fill"></i>
+            </div>
+            <h5 class="fw-bold mb-3">Spolupráce a koordinace</h5>
+            <p class="text-muted mb-0">
+              Spolek podporuje spolupráci mezi zemědělci, myslivci, obcemi a dobrovolníky či dalšími spolky a organizacemi. Společný cíl nás spojuje.
+            </p>
+          </div>
+        </div>
+
+        <!-- Bod 3 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm p-4 feature-card">
+            <div class="icon-box">
+              <i class="bi bi-book-half"></i>
+            </div>
+            <h5 class="fw-bold mb-3">Osvěta a vzdělávání</h5>
+            <p class="text-muted mb-0">
+              Spolek zajišťuje osvětovou a vzdělávací činnost v oblasti ochrany přírody a krajiny, zejména zvěře. Šíříme povědomí a osvědčené postupy.
+            </p>
+          </div>
+        </div>
+
+        <!-- Bod 4 -->
+        <div class="col-md-6 col-lg-6">
+          <div class="card h-100 border-0 shadow-sm p-4 feature-card">
+            <div class="icon-box">
+              <i class="bi bi-camera-video-fill"></i>
+            </div>
+            <h5 class="fw-bold mb-3">Drony a technické vybavení</h5>
+            <p class="text-muted mb-0">
+              Spolek může pořizovat a provozovat technické prostředky, zejména drony a související vybavení (termokamery, vysílačky, ochranné boxy).
+            </p>
+          </div>
+        </div>
+
+        <!-- Bod 5 -->
+        <div class="col-md-12 col-lg-6">
+          <div class="card h-100 border-0 shadow-sm p-4 feature-card">
+            <div class="icon-box">
+              <i class="bi bi-cpu-fill"></i>
+            </div>
+            <h5 class="fw-bold mb-3">Další technické činnosti</h5>
+            <p class="text-muted mb-0">
+              Spolek dále může vykonávat další činnosti pomocí technických prostředků, dronů apod. – například mapování terénu a monitoring stavu přírody.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Technika a licence -->
+  <section id="technika" class="py-5 bg-nature-light">
+    <div class="container py-4">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <span class="text-uppercase fw-semibold text-success small">Moderní technologie & legislativa</span>
+        <h2 class="fw-bold text-nature-primary mt-1">Naše technika a licence</h2>
+        <p class="text-muted">
+          Při záchraně zvěře spoléháme na špičkové termovizní drony, certifikované piloty a osvědčené záchranné postupy v souladu s leteckými i mysliveckými předpisy.
+        </p>
+      </div>
+
+      <!-- 3 hlavní pilíře techniky a provozu -->
+      <div class="row g-4 mb-5">
+        <!-- Drony a termovize -->
+        <div class="col-lg-4">
+          <div class="card h-100 border-0 shadow-sm rounded-4 p-4 feature-card bg-white">
+            <div class="icon-box">
+              <i class="bi bi-broadcast"></i>
+            </div>
+            <h4 class="fw-bold mb-3">Drony s termovizí</h4>
+            <p class="text-muted small mb-3">
+              Klíčem k nalezení skrytého mláděte v trávě je vysoké rozlišení termokamery a spolehlivý letový systém enterprise třídy.
+            </p>
+            <ul class="list-unstyled small text-muted mb-0">
+              <li class="py-1 d-flex align-items-start">
+                <i class="bi bi-check-circle-fill text-success me-2 mt-1"></i>
+                <span><strong>DJI Mavic 3 Enterprise Thermal (M3T)</strong> – tichý a vysoce efektivní dron s dlouhou výdrží.</span>
+              </li>
+              <li class="py-1 d-flex align-items-start">
+                <i class="bi bi-check-circle-fill text-success me-2 mt-1"></i>
+                <span><strong>Radiometrická termovize 640×512 px</strong> s vysokou citlivostí (&lt;50 mK) schopná detekovat i malé teplotní rozdíly.</span>
+              </li>
+              <li class="py-1 d-flex align-items-start">
+                <i class="bi bi-check-circle-fill text-success me-2 mt-1"></i>
+                <span><strong>Optická RGB kamera s až 56× zoomem</strong> pro bezpečné vizuální ověření z výšky bez plašení zvěře.</span>
+              </li>
+              <li class="py-1 d-flex align-items-start">
+                <i class="bi bi-check-circle-fill text-success me-2 mt-1"></i>
+                <span><strong>Souběžný režim (Split-Screen)</strong> – termo + reálný obraz vedle sebe v reálném čase na řídicí jednotce.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Licence a předpisy -->
+        <div class="col-lg-4">
+          <div class="card h-100 border-0 shadow-sm rounded-4 p-4 feature-card bg-white">
+            <div class="icon-box">
+              <i class="bi bi-award"></i>
+            </div>
+            <h4 class="fw-bold mb-3">Licence a legislativa</h4>
+            <p class="text-muted small mb-3">
+              Létáme výhradně legálně, bezpečně a v plném souladu s evropskými (EASA) i českými leteckými předpisy (ÚCL).
+            </p>
+            <ul class="list-unstyled small text-muted mb-0">
+              <li class="py-1 d-flex align-items-start">
+                <i class="bi bi-check-circle-fill text-success me-2 mt-1"></i>
+                <span><strong>Certifikace pilotů ÚCL (kategorie A1/A3 a A2)</strong> – piloti vlastní oficiální zkoušky a oprávnění dálkově řídícího pilota.</span>
+              </li>
+              <li class="py-1 d-flex align-items-start">
+                <i class="bi bi-check-circle-fill text-success me-2 mt-1"></i>
+                <span><strong>Registrace provozovatele dronu</strong> – platné identifikační číslo provozovatele (EASA ID) na všech strojích.</span>
+              </li>
+              <li class="py-1 d-flex align-items-start">
+                <i class="bi bi-check-circle-fill text-success me-2 mt-1"></i>
+                <span><strong>Pojištění odpovědnosti</strong> za škodu z provozu bezpilotního letadla pro maximální krytí a bezpečnost.</span>
+              </li>
+              <li class="py-1 d-flex align-items-start">
+                <i class="bi bi-check-circle-fill text-success me-2 mt-1"></i>
+                <span><strong>Aktivní koordinace vzdušného prostoru</strong> přes systém DronView (ŘLP ČR) a respektování bezletových zón.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Terénní a záchranná výbava -->
+        <div class="col-lg-4">
+          <div class="card h-100 border-0 shadow-sm rounded-4 p-4 feature-card bg-white">
+            <div class="icon-box">
+              <i class="bi bi-tools"></i>
+            </div>
+            <h4 class="fw-bold mb-3">Pozemní & záchranná výbava</h4>
+            <p class="text-muted small mb-3">
+              Samotné nalezení zvířete je polovina úspěchu – druhou je rychlá a šetrná manipulace s ohledem na biologické potřeby zvěře.
+            </p>
+            <ul class="list-unstyled small text-muted mb-0">
+              <li class="py-1 d-flex align-items-start">
+                <i class="bi bi-check-circle-fill text-success me-2 mt-1"></i>
+                <span><strong>Terénní radiostanice (vysílačky)</strong> pro přímou a bleskovou navigaci pozemní hlídky ke zvířeti.</span>
+              </li>
+              <li class="py-1 d-flex align-items-start">
+                <i class="bi bi-check-circle-fill text-success me-2 mt-1"></i>
+                <span><strong>Mobilní napájecí stanice & rychlonabíječe</strong> pro nepřetržitý ranní provoz bez čekání na nabití baterií.</span>
+              </li>
+              <li class="py-1 d-flex align-items-start">
+                <i class="bi bi-check-circle-fill text-success me-2 mt-1"></i>
+                <span><strong>Displeje s vysokým jasem (1000+ nitů)</strong> pro perfektní čitelnost i za ranního protisvětla v terénu.</span>
+              </li>
+              <li class="py-1 d-flex align-items-start">
+                <i class="bi bi-check-circle-fill text-success me-2 mt-1"></i>
+                <span><strong>Ochranné prodyšné boxy a rukavice</strong> s trávou – zamezení přenosu lidského pachu, aby matka mládě neodvrhla.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Postup ranní mise -->
+      <div class="card border-0 shadow-sm rounded-4 p-4 p-md-5 bg-white">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-4">
+            <span class="badge bg-success-subtle text-success-emphasis px-3 py-2 rounded-pill mb-2">
+              <i class="bi bi-clock-history me-1"></i> Jak probíhá zásah v praxi
+            </span>
+            <h4 class="fw-bold text-nature-primary mb-2">Proč létáme brzy ráno?</h4>
+            <p class="text-muted small mb-0">
+              Během dne slunce louku prohřeje a kameny či krtince vydávají podobné teplo jako zvíře. Termovize funguje nejlépe za svítání, kdy je zem chladná a tělesné teplo srnčete zřetelně září.
+            </p>
+          </div>
+          <div class="col-lg-8">
+            <div class="row g-3">
+              <div class="col-sm-6 col-md-3">
+                <div class="p-3 bg-light rounded-3 text-center h-100">
+                  <div class="fw-bold text-success fs-5 mb-1">04:30</div>
+                  <div class="fw-semibold small">Příjezd a příprava</div>
+                  <p class="text-muted mb-0 mt-1" style="font-size: 0.8rem;">Kontrola prostoru, složení dronu a vzlet ještě před svítáním.</p>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-3">
+                <div class="p-3 bg-light rounded-3 text-center h-100">
+                  <div class="fw-bold text-success fs-5 mb-1">Termovize</div>
+                  <div class="fw-semibold small">Skenování louky</div>
+                  <p class="text-muted mb-0 mt-1" style="font-size: 0.8rem;">Dron systematicky prolétává plochu ve výšce 30–40 metrů.</p>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-3">
+                <div class="p-3 bg-light rounded-3 text-center h-100">
+                  <div class="fw-bold text-success fs-5 mb-1">Navádění</div>
+                  <div class="fw-semibold small">GPS & vysílačka</div>
+                  <p class="text-muted mb-0 mt-1" style="font-size: 0.8rem;">Operátor navede pozemní hlídku přesně k místu lehu mláděte.</p>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-3">
+                <div class="p-3 bg-light rounded-3 text-center h-100">
+                  <div class="fw-bold text-success fs-5 mb-1">Záchrana</div>
+                  <div class="fw-semibold small">Šetrné vynesení</div>
+                  <p class="text-muted mb-0 mt-1" style="font-size: 0.8rem;">Přemístění do stínu mimo dráhu žacího stroje bez lidského pachu.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Spolupráce a zapojení -->
+  <section id="spoluprace" class="py-5">
+    <div class="container py-4">
+      <div class="text-center mb-5">
+        <span class="text-uppercase fw-semibold text-success small">Zapojte se</span>
+        <h2 class="fw-bold text-nature-primary mt-1">Jak spolupracujeme</h2>
+        <p class="text-muted">Každý článek řetězce je důležitý pro úspěšnou záchranu.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Pro zemědělce -->
+        <div class="col-lg-4">
+          <div class="card h-100 border-0 shadow-sm rounded-4 p-4 text-center">
+            <div class="mb-3">
+              <i class="bi bi-flower1 text-success fs-1"></i>
+            </div>
+            <h4 class="fw-bold">Pro zemědělce</h4>
+            <p class="text-muted flex-grow-1">
+              Plánujete senoseč? Dejte nám vědět předem. Zorganizujeme kontrolu vašich pozemků bez zdržení vaší polní práce. Zabráníte poškození techniky i zbytečnému úhynu.
+            </p>
+            <div>
+              <a href="#kontakt" class="btn btn-nature-outline rounded-pill w-100">Nahlásit termín seče</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pro myslivce a obce -->
+        <div class="col-lg-4">
+          <div class="card h-100 border-0 shadow-sm rounded-4 p-4 text-center">
+            <div class="mb-3">
+              <i class="bi bi-compass text-success fs-1"></i>
+            </div>
+            <h4 class="fw-bold">Pro myslivce a obce</h4>
+            <p class="text-muted flex-grow-1">
+              Nabízíme technickou podporu a koordinaci. Znáte honitby a chování zvěře nejlépe – my vám k tomu poskytneme pohled shora a termovizi.
+            </p>
+            <div>
+              <a href="#kontakt" class="btn btn-nature-outline rounded-pill w-100">Navázat spolupráci</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pro dobrovolníky & piloty -->
+        <div class="col-lg-4">
+          <div class="card h-100 border-0 shadow-sm rounded-4 p-4 text-center">
+            <div class="mb-3">
+              <i class="bi bi-airplane-engines text-success fs-1"></i>
+            </div>
+            <h4 class="fw-bold">Pro dobrovolníky a piloty</h4>
+            <p class="text-muted flex-grow-1">
+              Máte dron s termovizí, nebo chcete pomoci přímo v terénu s vynášením zvěře? Zapojte se do naší dobrovolnické sítě a zachraňujte s námi životy.
+            </p>
+            <div>
+              <a href="#kontakt" class="btn btn-nature-outline rounded-pill w-100">Přidat se k týmu</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Úřední údaje & transparentnost -->
+  <section id="udaje" class="py-5 bg-nature-light">
+    <div class="container py-4">
+      <div class="row align-items-center justify-content-between g-4">
+        <div class="col-lg-5">
+          <span class="text-uppercase fw-semibold text-success small">Transparentnost</span>
+          <h2 class="fw-bold text-nature-primary mt-1 mb-3">Úřední a spolkové údaje</h2>
+          <p class="text-muted">
+            Jsme řádně registrovaný spolek působící v souladu s právním řádem České republiky. Veškeré naše aktivity jsou zaměřeny na ochranu přírody a veřejný zájem. Spolek je zapsán pod spisovou značkou L 22940 vedenou u Krajského soudu v Ostravě.
+          </p>
+          <div class="d-flex align-items-center p-3 bg-white shadow-sm rounded-3 mb-2">
+            <i class="bi bi-patch-check-fill text-success fs-3 me-3"></i>
+            <div>
+              <div class="fw-bold">Zápis ve spolkovém rejstříku</div>
+              <small class="text-muted">Datum zápisu: 23. října 2026</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="card border-0 shadow-sm rounded-4 p-4 bg-white">
+            <h5 class="fw-bold border-bottom pb-3 mb-3 text-nature-primary">
+              <i class="bi bi-info-circle me-2"></i>Identifikační údaje spolku
+            </h5>
+            <ul class="list-unstyled mb-0">
+              <li class="py-2 d-flex justify-content-between border-bottom">
+                <span class="text-muted">Název spolku:</span>
+                <span class="fw-semibold text-end">Zachraň zvíře před sekačkou Rožnovsko a okolí z.s.</span>
+              </li>
+              <li class="py-2 d-flex justify-content-between border-bottom">
+                <span class="text-muted">IČO:</span>
+                <span class="fw-semibold text-muted font-monospace">30117194</span>
+              </li>
+              <li class="py-2 d-flex justify-content-between border-bottom">
+                <span class="text-muted">Datová schránka:</span>
+                <span class="fw-semibold">igw5uj7</span>
+              </li>
+              <li class="py-2 d-flex justify-content-between border-bottom">
+                <span class="text-muted">Sídlo spolku:</span>
+                <span class="fw-semibold text-muted">č.p. 721, 756 27 Valašská Bystřice</span>
+              </li>
+              <li class="py-2 d-flex justify-content-between">
+                <span class="text-muted">Transparentní účet:</span>
+                <span class="fw-semibold text-muted font-monospace">[Doplňte číslo účtu]</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontakty a profily členů -->
+  <section id="kontakt" class="py-5">
+    <div class="container py-4">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <span class="text-uppercase fw-semibold text-success small">Tým a kontakty</span>
+        <h2 class="fw-bold text-nature-primary mt-1">Lidé ve spolku & přímé kontakty</h2>
+        <p class="text-muted">
+          Neváhejte se obrátit přímo na zástupce našeho spolku. Jsme připraveni pomoci s koordinací záchrany na loukách, zapojením pilotů i zodpovězením dotazů.
+        </p>
+      </div>
+
+      <!-- Profily hlavních členů spolku -->
+      <div class="row g-4 mb-5 justify-content-center">
+        
+        <!-- Člen 1: Předseda -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm rounded-4 p-4 text-center feature-card">
+            <div class="mx-auto mb-3">
+              <div class="avatar-circle bg-success-subtle text-success d-inline-flex align-items-center justify-content-center rounded-circle" style="width: 88px; height: 88px; font-size: 2.5rem;">
+                <i class="bi bi-person-fill"></i>
+              </div>
+            </div>
+            <h5 class="fw-bold mb-1">[Jméno a Příjmení]</h5>
+            <div class="badge bg-success-subtle text-success-emphasis mb-3 px-3 py-1 rounded-pill">
+              Předseda spolku
+            </div>
+            <p class="text-muted small mb-4">
+              Vedení spolku, koordinace záchranných akcí, komunikace se zemědělskými subjekty a úřady.
+            </p>
+            <div class="border-top pt-3 mt-auto text-start">
+              <div class="d-flex align-items-center mb-2">
+                <i class="bi bi-envelope-fill text-success me-2"></i>
+                <a href="mailto:predseda@zachranzvire.cz" class="text-decoration-none text-dark small text-truncate">predseda@zachranzvire.cz</a>
+              </div>
+              <div class="d-flex align-items-center">
+                <i class="bi bi-telephone-fill text-success me-2"></i>
+                <a href="tel:+420123456789" class="text-decoration-none text-dark small">+420 123 456 789</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Člen 2: Místopředseda / Drony & Technika -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm rounded-4 p-4 text-center feature-card">
+            <div class="mx-auto mb-3">
+              <div class="avatar-circle bg-success-subtle text-success d-inline-flex align-items-center justify-content-center rounded-circle" style="width: 88px; height: 88px; font-size: 2.5rem;">
+                <i class="bi bi-person-gear"></i>
+              </div>
+            </div>
+            <h5 class="fw-bold mb-1">[Jméno a Příjmení]</h5>
+            <div class="badge bg-success-subtle text-success-emphasis mb-3 px-3 py-1 rounded-pill">
+              Místopředseda & Koordinátor techniky
+            </div>
+            <p class="text-muted small mb-4">
+              Správa termovizních dronů, školení pilotů, letové plány a technická podpora při monitoringu luk.
+            </p>
+            <div class="border-top pt-3 mt-auto text-start">
+              <div class="d-flex align-items-center mb-2">
+                <i class="bi bi-envelope-fill text-success me-2"></i>
+                <a href="mailto:drony@zachranzvire.cz" class="text-decoration-none text-dark small text-truncate">drony@zachranzvire.cz</a>
+              </div>
+              <div class="d-flex align-items-center">
+                <i class="bi bi-telephone-fill text-success me-2"></i>
+                <a href="tel:+420123456780" class="text-decoration-none text-dark small">+420 123 456 780</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Člen 3: Dobrovolníci & Osvěta / Myslivost -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm rounded-4 p-4 text-center feature-card">
+            <div class="mx-auto mb-3">
+              <div class="avatar-circle bg-success-subtle text-success d-inline-flex align-items-center justify-content-center rounded-circle" style="width: 88px; height: 88px; font-size: 2.5rem;">
+                <i class="bi bi-person-heart"></i>
+              </div>
+            </div>
+            <h5 class="fw-bold mb-1">[Jméno a Příjmení]</h5>
+            <div class="badge bg-success-subtle text-success-emphasis mb-3 px-3 py-1 rounded-pill">
+              Koordinátor dobrovolníků & osvěty
+            </div>
+            <p class="text-muted small mb-4">
+              Koordinace pozemních hlídek, komunikace s mysliveckými spolky, osvětová činnost a vzdělávání.
+            </p>
+            <div class="border-top pt-3 mt-auto text-start">
+              <div class="d-flex align-items-center mb-2">
+                <i class="bi bi-envelope-fill text-success me-2"></i>
+                <a href="mailto:dobrovolnici@zachranzvire.cz" class="text-decoration-none text-dark small text-truncate">dobrovolnici@zachranzvire.cz</a>
+              </div>
+              <div class="d-flex align-items-center">
+                <i class="bi bi-telephone-fill text-success me-2"></i>
+                <a href="tel:+420123456781" class="text-decoration-none text-dark small">+420 123 456 781</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Všeobecný kontakt & rychlá zpráva -->
+      <div class="row g-4 justify-content-center">
+        <!-- Všeobecná vizitka -->
+        <div class="col-lg-5">
+          <div class="card border-0 shadow-sm rounded-4 p-4 h-100">
+            <h5 class="fw-bold mb-4 text-nature-primary">
+              <i class="bi bi-building me-2"></i>Oficiální spolkový kontakt
+            </h5>
+            
+            <div class="d-flex mb-3">
+              <div class="icon-box me-3 mb-0 flex-shrink-0" style="width: 48px; height: 48px; font-size: 1.25rem;">
+                <i class="bi bi-inbox"></i>
+              </div>
+              <div>
+                <div class="fw-semibold">Centrální e-mail</div>
+                <a href="mailto:info@zachranzvire.cz" class="text-decoration-none text-nature-primary">info@zachranzvire.cz</a>
+              </div>
+            </div>
+
+            <div class="d-flex mb-3">
+              <div class="icon-box me-3 mb-0 flex-shrink-0" style="width: 48px; height: 48px; font-size: 1.25rem;">
+                <i class="bi bi-telephone"></i>
+              </div>
+              <div>
+                <div class="fw-semibold">Pohotovostní telefon (senoseče květen–červenec)</div>
+                <a href="tel:+420123456789" class="text-decoration-none text-nature-primary fw-bold">+420 123 456 789</a>
+              </div>
+            </div>
+
+            <div class="d-flex mb-3">
+              <div class="icon-box me-3 mb-0 flex-shrink-0" style="width: 48px; height: 48px; font-size: 1.25rem;">
+                <i class="bi bi-geo-alt"></i>
+              </div>
+              <div>
+                <div class="fw-semibold">Region působnosti</div>
+                <div class="text-muted small">Působíme v okolí Rožnova pod Radhoštěm podle domluvy se zemědělci a myslivci.</div>
+              </div>
+            </div>
+
+            <div class="alert alert-success mt-auto mb-0" role="alert">
+              <i class="bi bi-info-circle-fill me-2"></i>
+              <strong>Upozornění pro zemědělce:</strong> Nahlaste sečení ideálně 2–3 dny předem, aby piloti a dobrovolníci stihli provést ranní průzkum za chladu.
+            </div>
+          </div>
+        </div>
+
+        <!-- Rychlý formulář zprávy -->
+        <div class="col-lg-7">
+          <div class="card border-0 shadow-sm rounded-4 p-4 h-100">
+            <h5 class="fw-bold mb-3 text-nature-primary">
+              <i class="bi bi-chat-left-dots me-2"></i>Napište nám zprávu
+            </h5>
+            
+            <form action="https://api.staticforms.dev/submit" method="POST">
+              <input type="hidden" name="apiKey" value="sf_07966888d6292ce38064dadf" />
+              <input type="hidden" name="subject" value="Martin Vrána submission" />
+              <div class="row g-3 mb-3">
+                <div class="col-md-6">
+                  <label for="jmeno" class="form-label fw-semibold small">Jméno a příjmení / Organizace</label>
+                  <input type="text" class="form-control" id="jmeno" name="jmeno" placeholder="Jan Novák / Farma s.r.o." required>
+                </div>
+                <div class="col-md-6">
+                  <label for="email" class="form-label fw-semibold small">E-mail</label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="vas@email.cz" required>
+                </div>
+              </div>
+
+              <div class="row g-3 mb-3">
+                <div class="col-md-6">
+                  <label for="telefon" class="form-label fw-semibold small">Telefon</label>
+                  <input type="tel" class="form-control" id="telefon" name="telefon" placeholder="+420 ...">
+                </div>
+                <div class="col-md-6">
+                  <label for="typZpravy" class="form-label fw-semibold small">Komu / Téma</label>
+                  <select class="form-select" id="typZpravy" name="typZpravy">
+                    <option value="Hlášení sečení (zemědělec)">Hlášení sečení luk (pro zemědělce)</option>
+                    <option value="Drony a technika">Piloti a termovize (pro dronaře)</option>
+                    <option value="Dobrovolníci a osvěta">Chci pomáhat jako dobrovolník</option>
+                    <option value="Myslivost a obce">Myslivecká sdružení a obce</option>
+                    <option value="Vedení spolku">Vedení spolku / Všeobecný dotaz</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="zprava" class="form-label fw-semibold small">Zpráva / Detaily k pozemkům a termínu seče</label>
+                <textarea class="form-control" id="zprava" name="zprava" rows="3" placeholder="Napište nám podrobnosti..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-nature-primary w-100 py-2 rounded-pill fw-semibold">
+                <i class="bi bi-send me-2"></i>Odeslat zprávu
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Zápatí -->
+  <footer class="bg-dark text-white py-4 mt-5">
+    <div class="container">
+      <div class="row align-items-center gy-3">
+        <div class="col-md-6 text-center text-md-start">
+          <!--<div class="fw-bold fs-5 text-light mb-1 d-flex align-items-center justify-content-center justify-content-md-start">
+            <img src="img/logo.svg" alt="Logo spolku" width="36" height="36" class="me-2">
+            <span>	
+Zachraň zvíře před sekačkou Rožnovsko a okolí z.s.</span>
+          </div>-->
+          <small class="text-secondary">
+            Zachraň zvíře před sekačkou Rožnovsko a okolí z.s.<br>&copy; Martin Vrána, <span id=""copyright><script>document.write(new Date().getFullYear())</script></span>
+          </small>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <small class="text-secondary d-block">
+            Hostováno pomocí <a href="https://pages.github.com" target="_blank" rel="noopener" class="text-success text-decoration-none">GitHub Pages</a>.
+          </small>
+          <a href="#uvod" class="text-white-50 text-decoration-none small">
+            <i class="bi bi-arrow-up-circle me-1"></i>Zpět nahoru
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

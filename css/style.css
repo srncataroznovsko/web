@@ -1,0 +1,91 @@
+:root {
+  --primary-color: #2d6a4f;
+  --primary-hover: #1b4332;
+  --accent-color: #52b788;
+  --light-bg: #f8faf8;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #2c3e50;
+  scroll-behavior: smooth;
+}
+
+/* Zelená zvýraznění ladící k přírodě */
+.bg-nature-light {
+  background-color: var(--light-bg);
+}
+
+.text-nature-primary {
+  color: var(--primary-color) !important;
+}
+
+.btn-nature-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: #fff;
+}
+
+.btn-nature-primary:hover {
+  background-color: var(--primary-hover);
+  border-color: var(--primary-hover);
+  color: #fff;
+}
+
+.btn-nature-outline {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.btn-nature-outline:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: #fff;
+}
+
+/* Hero sekce s tmavým filtrem pro skvělou čitelnost textu */
+.hero-section {
+  background: 
+    linear-gradient(rgba(12, 28, 19, 0.72), rgba(12, 28, 19, 0.82)),
+    url("../img/hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  padding: 6.5rem 0;
+  /*text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);*/
+}
+
+/* Karty s činnostmi */
+.feature-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 0.75rem;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08) !important;
+}
+
+.icon-box {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e8f5e9;
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Avatar v profilech členů */
+.avatar-circle {
+  transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+.feature-card:hover .avatar-circle {
+  transform: scale(1.06);
+}
+
