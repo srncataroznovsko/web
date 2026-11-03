@@ -13,12 +13,10 @@ document.addEventListener("DOMContentLoaded", function () {
   map.on("focus", () => map.scrollWheelZoom.enable());
   map.on("blur", () => map.scrollWheelZoom.disable());
 
-  // Podkladová mapa: CARTO Voyager (založená na OpenStreetMap datech)
-  // Neomezuje volání z file:// ani localhostu a skvěle ladí s přírodní tematikou webu
-  L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png", {
+  // Podkladová mapa OpenStreetMap (bez nutnosti API klíče)
+  L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
     maxZoom: 19,
-    subdomains: "abcd",
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> přispěvatelé &copy; <a href="https://carto.com/attributions" target="_blank" rel="noopener">CARTO</a>'
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> přispěvatelé'
   }).addTo(map);
 
   // Testovací data minulých letů
