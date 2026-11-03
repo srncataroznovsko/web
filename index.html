@@ -24,6 +24,11 @@
   <!-- Generátor galerie -->
   <script src="js/galleryGenerator.js"></script>
 
+  <!-- Leaflet CSS & JS pro mapu minulých letů -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="js/map.js" defer></script>
+
 </head>
 <body>
 
@@ -51,6 +56,9 @@
           </li>
           <li class="nav-item">
             <a class="nav-link px-3" href="#technika">Technika</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3" href="#mapa-letu">Mapa letů</a>
           </li>
           <li class="nav-item">
             <a class="nav-link px-3" href="#spoluprace">Jak pomáháme</a>
@@ -404,6 +412,62 @@
         </div>
       </div>
 
+    </div>
+  </section>
+
+
+  <!-- Mapa minulých letů -->
+  <section id="mapa-letu" class="py-5">
+    <div class="container py-4">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <span class="text-uppercase fw-semibold text-success small">Záznamy z terénu</span>
+        <h2 class="fw-bold text-nature-primary mt-1">Mapa minulých letů</h2>
+        <p class="text-muted">
+          Jednoduchý přehled lokalit v Rožnově pod Radhoštěm a okolí, kde jsme monitorovali louky před sečením a kolik srnčat se nám podařilo zachránit.
+        </p>
+      </div>
+
+      <!-- Souhrnné statistiky -->
+      <div class="row g-3 mb-4 justify-content-center">
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card border-0 shadow-sm p-3 text-center rounded-4 bg-nature-light h-100">
+            <div class="text-success fs-3 mb-1"><i class="bi bi-heart-fill"></i></div>
+            <div class="display-6 fw-bold text-nature-primary" id="stat-total-fawns">0</div>
+            <div class="text-muted small fw-semibold">Nalezených srnčat</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card border-0 shadow-sm p-3 text-center rounded-4 bg-nature-light h-100">
+            <div class="text-success fs-3 mb-1"><i class="bi bi-geo-alt-fill"></i></div>
+            <div class="display-6 fw-bold text-nature-primary" id="stat-total-flights">0</div>
+            <div class="text-muted small fw-semibold">Monitorovaných lokalit</div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3">
+          <div class="card border-0 shadow-sm p-3 text-center rounded-4 bg-nature-light h-100">
+            <div class="text-success fs-3 mb-1"><i class="bi bi-bounding-box"></i></div>
+            <div class="display-6 fw-bold text-nature-primary" id="stat-total-area">0 ha</div>
+            <div class="text-muted small fw-semibold">Prohledané plochy</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kontejner mapy -->
+      <div class="card border-0 shadow-sm rounded-4 overflow-hidden p-2 bg-white">
+        <div id="flight-map"></div>
+      </div>
+
+      <!-- Nápověda pod mapou -->
+      <div class="d-flex flex-wrap justify-content-between align-items-center mt-3 text-muted small px-1">
+        <div>
+          <i class="bi bi-info-circle me-1 text-success"></i> Kliknutím na špendlík na mapě zobrazíte podrobnosti o letu a počtu nalezených srnčat.
+        </div>
+        <div class="mt-2 mt-sm-0">
+          <span class="badge bg-success-subtle text-success-emphasis">
+            <i class="bi bi-geo-alt-fill me-1"></i>Centrum: Rožnov pod Radhoštěm
+          </span>
+        </div>
+      </div>
     </div>
   </section>
 
