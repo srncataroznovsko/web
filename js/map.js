@@ -1,4 +1,16 @@
-// Inicializace Leaflet mapy pro přehled minulých letů
+// Data z minulých let
+const flights = [
+  {
+    title: "Hustiko-Solanec",
+    lat: 49.42643,
+    lng: 18.22067,
+    date: "14. června 2026",
+    fawnsFound: 19,
+    areaHa: 68.7,
+    note: "Spolupráce 2 dronů"
+  },
+];
+
 document.addEventListener("DOMContentLoaded", function () {
   const mapElement = document.getElementById("flight-map");
   if (!mapElement) return;
@@ -18,46 +30,6 @@ document.addEventListener("DOMContentLoaded", function () {
     maxZoom: 19,
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> přispěvatelé'
   }).addTo(map);
-
-  // Testovací data minulých letů
-  const flights = [
-    {
-      id: 1,
-      title: "Rožnov p. R. – Horní Paseky",
-      lat: 49.4725,
-      lng: 18.1630,
-      date: "28. května 2026",
-      fawnsFound: 3,
-      areaHa: 14.5,
-      pilot: "Martin & tým",
-      status: "Úspěšná záchrana",
-      note: "Ranní monitoring za úsvitu (04:45) před první senosečí. Detekována a vynesena 3 srnčata."
-    },
-    {
-      id: 2,
-      title: "Valašská Bystřice – louky u lesa",
-      lat: 49.4185,
-      lng: 18.1180,
-      date: "2. června 2026",
-      fawnsFound: 2,
-      areaHa: 9.8,
-      pilot: "Tým Rožnovsko",
-      status: "Úspěšná záchrana",
-      note: "Spolupráce s místním hospodářem. Termovize zachytila dvojčata ukrytá ve vysokém porostu."
-    },
-    {
-      id: 3,
-      title: "Dolní Bečva – pod Radhoštěm",
-      lat: 49.4570,
-      lng: 18.2015,
-      date: "10. června 2026",
-      fawnsFound: 1,
-      areaHa: 7.2,
-      pilot: "Martin & dobrovolníci",
-      status: "Úspěšná záchrana",
-      note: "Rychlý zásah na vyžádání zemědělce před příjezdem sekačky. Jedno mladé srnče včas přeneseno do bezpečí."
-    }
-  ];
 
   // Vlastní zelená ikona špendlíku s motivem
   const fawnIcon = L.divIcon({
@@ -94,8 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
             </div>
           </div>
           <div class="small text-muted mb-2">
-            <div><i class="bi bi-bounding-box me-1 text-success"></i> <strong>Prohledaná plocha:</strong> ${flight.areaHa} ha</div>
-            <div><i class="bi bi-check-circle me-1 text-success"></i> <strong>Výsledek:</strong> ${flight.status}</div>
+            ${flight.areaHa?'<div><i class="bi bi-bounding-box me-1 text-success"></i> <strong>Prohledaná plocha:</strong>'+flight.areaHa+' ha</div>':""}
           </div>
           <p class="small text-secondary mb-0 border-top pt-2 fst-italic">
             "${flight.note}"
